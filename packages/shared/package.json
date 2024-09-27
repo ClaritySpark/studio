@@ -1,0 +1,49 @@
+{
+  "name": "@clarityspark/shared",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepack": "pnpm build",
+    "build": "tsup src --dts --format esm,cjs",
+    "build:tsc": "tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "clean": "rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClaritySpark/studio"
+  },
+  "keywords": [
+    "web editor",
+    "react web editor"
+  ],
+  "author": "<pmhxxhsj@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "2.3.0",
+    "clsx": "2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "typescript": "5.3.3",
+    "@vercel/style-guide": "5.2.0",
+    "tailwindcss": "3.4.4"
+  }
+}
