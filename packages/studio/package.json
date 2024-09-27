@@ -1,6 +1,6 @@
 {
   "name": "@clarityspark/studio",
-  "version": "0.1.10",
+  "version": "0.0.1",
   "description": "web editor for react",
   "type": "module",
   "main": "dist/index.js",
